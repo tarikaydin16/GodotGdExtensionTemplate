@@ -14,7 +14,13 @@ env = SConscript("godot-cpp/SConstruct")
 
 env.Append(CPPPATH=["src/"])
 sources = Glob("src/*.cpp")
+env.Append(CPPPATH=[Dir('godot-cpp/include'),
+Dir('godot-cpp/gen/include/godot_cpp/classes'),
+Dir('godot-cpp/gen/include/godot_cpp/variant'),
+Dir('godot-cpp/include/godot_cpp/core'),
+Dir('godot-cpp/include/godot_cpp/variant')
 
+])
 if env["platform"] == "macos":
     library = env.SharedLibrary(
         "demoproject/bin/HelloWorld.{}.{}.framework/helloWorld.{}.{}".format(

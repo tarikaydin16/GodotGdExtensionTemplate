@@ -1,7 +1,7 @@
 #ifndef HELLOWORLD_H
 #define HELLOWORLD_H
 
-#include <godot_cpp/classes/node2d.hpp>
+#include <node2d.hpp>
 namespace godot
 {
     class HelloWorld : public Node2D

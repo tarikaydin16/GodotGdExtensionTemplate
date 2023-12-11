@@ -1,9 +1,9 @@
 #include "helloWorld.h"
-#include <godot_cpp/core/class_db.hpp>
+#include <class_db.hpp>
 // #include <godot_cpp/godot.hpp>
-#include <godot_cpp/variant/utility_functions.hpp>
-#include <godot_cpp/classes/engine.hpp>
-#include <godot_cpp/classes/input.hpp>
+#include <utility_functions.hpp>
+#include <engine.hpp>
+#include <input.hpp>
 using namespace godot;
 
 void HelloWorld::_bind_methods()
